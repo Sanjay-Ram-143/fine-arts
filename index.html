@@ -3,33 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>10-Image Centered Gallery</title>
+<title>Fine Arts Club</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="navbtn">
-        <label for="check">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </label>
-    </div>
-    <input type="checkbox" id="check">
-    <nav class="navbar">
-        <div class="nav-header">
-            <h1>Fine Arts Club</h1>
-            <img src="img/WhatsApp Image 2025-09-18 at 12.20.39_6292e9e6.jpg" alt="logo">
-            <span class="nav-close">
-                <label for="check">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-                </label>
-            </span>
-        </div>
-        <ul class="nav-items">
-            <li><a href="#home" class="nav-list">Home</a></li>
-            <li><a href="#about" class="nav-list">About</a></li>
-            <li><a href="#images" class="nav-list">Images</a></li>
-            <li><a href="#contact" class="nav-list">Contact</a></li>
-        </ul>
-    </nav>
     <img id="home" class="logo"  src="/img/mainlogo.jpg" alt="logo">
     <div class="heading">
         <h1>
@@ -40,6 +17,35 @@
         </p>
     </div>
     <hr>
+
+    <!--Menubar-->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">Fine Arts Club</div>
+
+      <!-- Menu Toggle Button -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <!-- Menu Icon SVG -->
+        <svg id="open-icon" class="icon" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+
+        <!-- Close Icon SVG -->
+        <svg id="close-icon" class="icon hidden" viewBox="0 0 24 24">
+          <path d="M6 6l12 12M6 18L18 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <!-- Nav Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#allimages" class="nav-link">All Images</a>
+        <a href="moreimg.html" class="nav-link">More Details</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
 
     <!-- About Section -->
   <section class="about-section" id="about">
@@ -63,7 +69,7 @@
       </p>
     </div>
   </section>
-<div class="all" id="images">
+<div class="all" id="allimages">
   <h1>All Images</h1>
 </div>
   <div class="images">
@@ -225,10 +231,8 @@
 <img src="/fineartsclub/image (163).jpg" alt="photo 163">
 <img src="/fineartsclub/image (164).jpg" alt="photo 164">
 <img src="/fineartsclub/image (165).jpg" alt="photo 165">
-<img src="/fineartsclub/image (166).jpg" alt="photo 166">
 <img src="/fineartsclub/image (167).jpg" alt="photo 167">
 <img src="/fineartsclub/image (168).jpg" alt="photo 168">
-<img src="/fineartsclub/image (169).jpg" alt="photo 169">
 <img src="/fineartsclub/image (170).jpg" alt="photo 170">
 <img src="/fineartsclub/image (171).jpg" alt="photo 171">
 <img src="/fineartsclub/image (172).jpg" alt="photo 172">
@@ -236,7 +240,6 @@
 <img src="/fineartsclub/image (174).jpg" alt="photo 174">
 <img src="/fineartsclub/image (175).jpg" alt="photo 175">
 <img src="/fineartsclub/image (176).jpg" alt="photo 176">
-<img src="/fineartsclub/image (177).jpg" alt="photo 177">
 <img src="/fineartsclub/image (178).jpg" alt="photo 178">
 <img src="/fineartsclub/image (179).jpg" alt="photo 179">
 <img src="/fineartsclub/image (180).jpg" alt="photo 180">
@@ -246,7 +249,6 @@
 <img src="/fineartsclub/image (184).jpg" alt="photo 184">
 <img src="/fineartsclub/image (185).jpg" alt="photo 185">
 <img src="/fineartsclub/image (186).jpg" alt="photo 186">
-<img src="/fineartsclub/image (187).jpg" alt="photo 187">
 <img src="/fineartsclub/image (188).jpg" alt="photo 188">
 <img src="/fineartsclub/image (189).jpg" alt="photo 189">
 <img src="/fineartsclub/image (191).jpg" alt="photo 191">
@@ -256,8 +258,6 @@
 <img src="/fineartsclub/image (199).jpg" alt="photo 199">
 <img src="/fineartsclub/image (201).jpg" alt="photo 201">
 <img src="/fineartsclub/image (202).jpg" alt="photo 202">
-<img src="/fineartsclub/image (203).jpg" alt="photo 203">
-<img src="/fineartsclub/image (204).jpg" alt="photo 204">
 <img src="/fineartsclub/image (206).jpg" alt="photo 206">
 <img src="/fineartsclub/image (208).jpg" alt="photo 208">
 <img src="/fineartsclub/image (209).jpg" alt="photo 209">
@@ -289,9 +289,7 @@
 <img src="/fineartsclub/image (236).jpg" alt="photo 236">
 <img src="/fineartsclub/image (237).jpg" alt="photo 237">
 <img src="/fineartsclub/image (238).jpg" alt="photo 238">
-<img src="/fineartsclub/image (239).jpg" alt="photo 239">
 <img src="/fineartsclub/image (240).jpg" alt="photo 240">
-<img src="/fineartsclub/image (241).jpg" alt="photo 241">
 <img src="/fineartsclub/image (242).jpg" alt="photo 242">
 <img src="/fineartsclub/image (243).jpg" alt="photo 243">
 <img src="/fineartsclub/image (244).jpg" alt="photo 244">
@@ -380,7 +378,6 @@
 <img src="f/ineartsclub/image (341).jpg" alt="photo 341">
 <img src="/fineartsclub/image (345).jpg" alt="photo 345">
 <img src="/fineartsclub/image (346).jpg" alt="photo 346">
-<img src="/fineartsclub/image (348).jpg" alt="photo 348">
 <img src="/fineartsclub/image (349).jpg" alt="photo 349">
 <img src="/fineartsclub/image (350).jpg" alt="photo 350">
 <img src="/fineartsclub/image (351).jpg" alt="photo 351">
@@ -389,7 +386,6 @@
 <img src="/fineartsclub/image (354).jpg" alt="photo 354">
 <img src="/fineartsclub/image (355).jpg" alt="photo 355">
 <img src="/fineartsclub/image (356).jpg" alt="photo 356">
-<img src="/fineartsclub/image (358).jpg" alt="photo 358">
 <img src="/fineartsclub/image (359).jpg" alt="photo 359">
 <img src="/fineartsclub/image (363).jpg" alt="photo 363">
 <img src="/fineartsclub/image (364).jpg" alt="photo 364">
@@ -398,7 +394,6 @@
 <img src="/fineartsclub/image (369).jpg" alt="photo 369">
 <img src="/fineartsclub/image (370).jpg" alt="photo 370">
 <img src="/fineartsclub/image (371).jpg" alt="photo 371">
-<img src="/fineartsclub/image (372).jpg" alt="photo 372">
 <img src="/fineartsclub/image (373).jpg" alt="photo 373">
 <img src="/fineartsclub/image (374).jpg" alt="photo 374">
 <img src="/fineartsclub/image (375).jpg" alt="photo 375">
@@ -413,7 +408,6 @@
 <img src="/fineartsclub/image (384).jpg" alt="photo 384">
 <img src="/fineartsclub/image (385).jpg" alt="photo 385">
 <img src="/fineartsclub/image (386).jpg" alt="photo 386">
-<img src="/fineartsclub/image (387).jpg" alt="photo 387">
 <img src="/fineartsclub/image (388).jpg" alt="photo 388">
 <img src="/fineartsclub/image (389).jpg" alt="photo 389">
 <img src="/fineartsclub/image (390).jpg" alt="photo 390">
@@ -596,7 +590,6 @@
 <img src="/fac/img (24).jpg" alt="image 24">
 <img src="/fac/img (25).jpg" alt="image 25">
 <img src="/fac/img (26).jpg" alt="image 26">
-<img src="/fac/img (27).jpg" alt="image 27">
 <img src="/fac/img (28).jpg" alt="image 28">
 <img src="/fac/img (29).jpg" alt="image 29">
 <img src="/fac/img (30).jpg" alt="image 30">
@@ -743,11 +736,7 @@
 <img src="/fac/img (171).jpg" alt="image 171">
 <img src="/fac/img (172).jpg" alt="image 172">
 <img src="/fac/img (173).jpg" alt="image 173">
-<img src="/fac/img (174).jpg" alt="image 174">
-<img src="/fac/img (175).jpg" alt="image 175">
 <img src="/fac/img (176).jpg" alt="image 176">
-<img src="/fac/img (177).jpg" alt="image 177">
-<img src="/fac/img (178).jpg" alt="image 178">
 <img src="/fac/img (179).jpg" alt="image 179">
 <img src="/fac/img (180).jpg" alt="image 180">
 <img src="/fac/img (181).jpg" alt="image 181">
@@ -811,9 +800,6 @@
 <img src="/fac/img (239).jpg" alt="image 239">
 <img src="/fac/img (240).jpg" alt="image 240">
 <img src="/fac/img (241).jpg" alt="image 241">
-<img src="/fac/img (242).jpg" alt="image 242">
-<img src="/fac/img (243).jpg" alt="image 243">
-<img src="/fac/img (244).jpg" alt="image 244">
 <img src="/fac/img (245).jpg" alt="image 245">
 <img src="/fac/img (246).jpg" alt="image 246">
 <img src="/fac/img (247).jpg" alt="image 247">
@@ -823,7 +809,6 @@
 <img src="/fac/img (251).jpg" alt="image 251">
 <img src="/fac/img (252).jpg" alt="image 252">
 <img src="/fac/img (253).jpg" alt="image 253">
-<img src="/fac/img (254).jpg" alt="image 254">
 <img src="/fac/img (255).jpg" alt="image 255">
 <img src="/fac/img (256).jpg" alt="image 256">
 <img src="/fac/img (257).jpg" alt="image 257">
@@ -1045,5 +1030,27 @@
     <p>&copy; 2025 Ram x Arul. All rights reserved.</p>
   </footer>
   </div>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const openIcon = document.getElementById('open-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      openIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        openIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
+  </script>
 </body>
 </html>

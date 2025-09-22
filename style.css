@@ -14,99 +14,113 @@ img{
 a{
     text-decoration: none;
 }
-.navbtn svg{
-    top: 3%;
-    left: 85%;
-    position: fixed;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    fill: brown;
+
+
+
+/*menubar*/
+
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.navbtn:hover svg{
-    fill: white;
-    background-color: brown;
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6fc;
 }
-.navbar h1{
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 1px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 2%;
-    color: brown;
-    font-size: 2rem;
+
+/* Navbar styles */
+.navbar {
+  background: linear-gradient(to right, rgb(138, 11, 11),rgb(141, 99, 99));
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-.navbar img{
-    width: 150px;
-    margin: 0 auto;
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 16px 20px;
 }
-.navbar li{
-    color: white;
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
 }
-.navbar{
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%; 
-    border: black;
-    border-style: solid;
-    border-width: 0.2rem;
+
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Hidden by default (desktop) */
 }
-.nav-header{
-    position: relative;
+
+.icon {
+  width: 28px;
+  height: 28px;
 }
-.nav-close{
-    position: absolute;
-    right: 0;
-    top: 5px;
-    right: 1%;
+
+.hidden {
+  display: none;
 }
-.nav-close svg{
-    cursor: pointer;
-    height: 32px;
-    width: 32px;
-    fill: brown;
+
+/* Nav Menu */
+.nav-menu {
+  display: flex;
+  gap: 24px;
 }
-.nav-close:hover svg{
-    background-color: red;
-    fill: white;
-    transition: 0.4s linear;
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  border-radius: 10px;
 }
-.nav-items li{
-    list-style-type:none;
+
+.nav-link:hover {
+  opacity: 0.8;
+  background-color: rgb(114, 5, 5);
 }
-.nav-list{
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
     display: block;
-    padding: 10px;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: brown;
-}
-.nav-list:hover{
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
     background-color: brown;
-    color: white;
-    padding-left: 1.5rem;
-    border-left: 0.5rem solid white;
-    transition: 0.4s linear;
-}
-@media screen and (min-width:768px) {
-    .navbar{
-        width:35%;
-        max-width: 25rem;
-    }
-}
-.navbar{
-    transform: translateX(-100%);
-}
-#check{
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
     display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
 }
-#check:checked ~ .navbar{
-    transform: translateX(0);
-}
+
+
 .logo{
     width: 200px;
     margin: 2%;
@@ -428,4 +442,27 @@ body {
   .contact-container {
     grid-template-columns: 1fr;
   }
+}
+
+.video video{
+  width:100%;
+  max-width:600px;      /* prevents overly large images */
+  height:auto;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+  object-fit:cover;
+}
+.video{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  gap:20px;
+  width:100%;
+  max-width:1000px;     /* keeps it nicely centered and not too wide */
+  justify-items:center;
+  margin-bottom: 50px;
+}
+@media screen and (max-width:768px){
+    .video video{
+        max-width: 300px;
+    }
 }
